@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <View
+            android:id="@+id/separatorLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:background="@color/grey_200"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTaskDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_24"
+            android:layout_marginTop="@dimen/dimen_12"
+            android:text="March 12, 21"
+            android:textColor="@color/grey_800"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separatorLine" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="0dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clDateLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <it.emperor.animatedcheckbox.AnimatedCheckBox
+                android:id="@+id/cbTaskStatus"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:acb_checked="true"
+                android:layout_marginStart="@dimen/dimen_16"
+                app:acb_animation_duration="600"
+                app:acb_border_checked_color="@color/grey_100"
+                app:acb_border_checked_stroke_width="1sp"
+                app:acb_border_not_checked_color="@color/blue_300"
+                app:acb_circle_color="@color/grey_100"
+                app:acb_hook_color="@color/blue_300"
+                app:acb_hook_stroke_width="2dp"
+                app:acb_padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/taskTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/taskTitle" />
+
+            <TextView
+                android:id="@+id/taskTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/nunito"
+                android:maxLines="3"
+                android:layout_marginStart="@dimen/dimen_4"
+                android:background="@color/grey_100"
+                android:paddingBottom="4dp"
+                android:text="This task needs to be completed"
+                android:textColor="@color/grey_900"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cbTaskStatus"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

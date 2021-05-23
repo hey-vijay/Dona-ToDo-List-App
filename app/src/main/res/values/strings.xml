@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Dona</string>
+    <string name="hint_task">Write a new task</string>
+    <string name="text_hint">Hint: Double tap on space bar to add task</string>
+    <string name="save">Save</string>
+    <string name="done">Done</string>
+    <string name="add">add..</string>
+    <string name="content_desc">addtask</string>
+    <string name="text_app_icon">App Name</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close drawer</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="text_empty_state_title">👉🏼👈🏼\nNo Task added yet</string>
+    <string name="text_empty_state_detail">You can also create recurring task 🙌🏼</string>
+    <string name="recurring_title">Add Things you do daily 🔁</string>
+    <string name="recurring_sub_title">Meditate\nWorkout\nBook reading\nMonitor your habit</string>
+    <string name="completed_title">Keep track of your task</string>
+    <string name="completed_sub_title">1% better everyday 🙌🏼</string>
+    <string name="desc_drag_and_drop">Drag and Drop</string>
+    <string name="title_recurring_task">Recurring Task</string>
+    <string name="title_settings">Setting</string>
+    <string name="title_today">Today</string>
+
+    <string-array name="spinner_tags">
+        <item>Today</item>
+        <item>Urgent</item>
+        <item>Low Energy</item>
+        <item>High Energy</item>
+    </string-array>
+
+    <string-array name="themeColorHex">
+        <item>#0063ae</item>
+        <item>#018FFE</item>
+        <item>#00c0fe</item>
+        <item>#08b9af</item>
+        <item>#00b86d</item>
+        <item>#fef1af</item>
+        <item>#ff6b55</item>
+        <item>#e4033a</item>
+        <item>#ad0e0c</item>
+        <item>#bd118d</item>
+        <item>#f76ee3</item>
+        <item>#7f41fe</item>
+        <item>#4644fb</item>
+        <item>#9296a2</item>
+        <item>#7b7165</item>
+    </string-array>
+
+</resources>
